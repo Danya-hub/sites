@@ -1,0 +1,1643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header__menuButton div {
+    background-color: #ffff;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 3px;
+}
+
+.header__menuButton {
+    cursor: pointer;
+}
+
+.header__info-socialNetworks {
+    display: flex;
+}
+
+.header__info {
+    display: none;
+}
+
+.header__logoImg {
+    width: 90px;
+    height: 42px;
+}
+
+.header__menuButton div:last-child {
+    margin-bottom: 0;
+}
+
+.header {
+    background-color: #4f181d;
+    height: 90px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header__info-socialNetworks-logo {
+    width: 35px;
+    height: 30px;
+    border: 1px solid #f3820a;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.header__info-socialNetworks-logoImg {
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 0 35px;
+    }
+
+    .header__info-locationImg,
+    .header__info-line,
+    .header__menuButton {
+        display: none;
+    }
+
+    .header__infoText {
+        margin-right: 50px;
+        display: grid;
+    }
+
+    .header__info {
+        display: unset;
+        display: flex;
+    }
+
+    .header__info-phoneNumber {
+        font-size: 22px;
+        color: #f3820a;
+    }
+
+    .header__info-location {
+        font-size: 10px;
+        color: #f3820a;
+    }
+
+    .header__info-location {
+        text-align: right;
+    }
+
+    .header__info-socialNetworks-logo:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header__logoImg {
+        width: 116px;
+        height: 54px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header__logoImg {
+        width: 112px;
+        height: 53px;
+    }
+
+    .header {
+        padding: 0 160px;
+    }
+
+    .header__infoText,
+    .header__info-line,
+    .header__info-locationImg {
+        display: unset;
+    }
+
+    .header__info-line {
+        width: 1px;
+        height: 20px;
+        display: inline-block;
+        margin: -1px 22px;
+        background-color: #7b5256;
+    }
+
+    .header__info-location {
+        position: absolute;
+        top: 35px;
+        right: 560px;
+    }
+
+    .header__info-location {
+        font-size: 14px;
+    }
+
+    .header__info-location::before {
+        content: url("./assets/icon\ pointer@1X.png");
+        margin-right: 10px;
+    }
+
+    .header__info-phoneNumber {
+        font-size: 24px;
+    }
+}
+
+.slider {
+    background-image: url(./Karaoke-Bar/slider/assets/hero-img.jpg);
+    background-color: #646364;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    height: 588px;
+    background-size: 315%;
+    background-position: center;
+}
+
+.slider__arrows {
+    display: none;
+}
+
+.slider__mainTitle {
+    color: #f3820a;
+    width: 182px;
+    text-align: center;
+    font-family: "brush-script-std", sans-serif;
+    font-size: 28px;
+    margin: 0 auto;
+    padding-top: 132px;
+}
+
+.slider__title,
+.sliderPromo {
+    color: #ffff;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider__title {
+    font-size: 35px;
+    width: 234px;
+    margin-top: 18px;
+}
+
+.sliderPromo {
+    font-size: 14px;
+    line-height: 27px;
+    width: 256px;
+    margin-top: 25px;
+}
+
+
+.slider__button {
+    background-color: #f3820a;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 240px;
+    height: 56px;
+    margin-top: 40px;
+}
+
+.slider__buttonLink {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 55px;
+    color: black;
+}
+
+.slider__leftArrow,
+.slider__rightArrow {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .slider {
+        height: 676px;
+        background-size: 150%;
+        background-position: right -160px top;
+    }
+
+    .slider__mainTitle {
+        font-size: 33px;
+        width: 100%;
+        padding-top: 220px;
+    }
+
+    .slider__title {
+        font-size: 45px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .sliderPromo {
+        font-size: 16px;
+        width: 566px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .sliderPromo br {
+        display: none;
+    }
+
+    .slider__arrows {
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 210px;
+    }
+
+    .slider__rightArrow,
+    .slider__leftArrow {
+        width: 60px;
+        height: 60px;
+        opacity: 0.8;
+    }
+
+    .slider__leftArrow {
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
+
+    .slider__button {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .slider {
+        height: 796px;
+        background-size: 127%;
+        background-position: center;
+    }
+
+    .slider__mainTitle {
+        font-size: 33px;
+        width: 376px;
+        padding-top: 300px;
+    }
+
+    .slider__title {
+        font-size: 64px;
+        width: 730px;
+    }
+
+    .sliderPromo {
+        width: 610px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .slider__button {
+        margin-top: 80px;
+    }
+
+    .slider__arrows {
+        width: 950px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 51%;
+    }
+
+    .slider {
+        position: relative;
+    }
+}
+
+@media (min-width: 1920px) {
+    .slider {
+        height: 992px;
+        background-size: 100%;
+        background-position: right 0px top;
+    }
+
+    .slider__mainTitle {
+        font-size: 40px;
+        width: 456px;
+        padding-top: 325px;
+    }
+
+    .slider__title {
+        font-size: 80px;
+        width: 920px;
+        margin-top: 0;
+    }
+
+    .sliderPromo {
+        width: 680px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .slider__button {
+        margin-top: 90px;
+    }
+
+    .slider__arrows {
+        width: 1600px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 51%;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slider__arrows {
+        width: 1600px;
+    }
+}
+
+.categories {
+    margin-bottom: 50px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories__imgFood {
+    background: url(./Karaoke-Bar/сategories/assets/pic1.jpg);
+    background-position: left -16px top -108px;
+    background-repeat: no-repeat;
+    background-color: #a09e9e;
+    background-blend-mode: multiply;
+    width: 280px;
+    height: 325px;
+    background-size: 160%;
+}
+
+.categories__imgFood-mainTitle,
+.categories__imgGirls-mainTitle {
+    font-size: 30px;
+    font-family: "brush-script-std", sans-serif;
+    color: #f3820a;
+    padding-top: 40px;
+    width: 75px;
+    margin: 0 auto;
+}
+
+.categories__imgFood-title {
+    width: 182px;
+}
+
+.categories__imgFood-title,
+.categories__imgGirls-title {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 240px;
+}
+
+.categories__imgFood-button,
+.categories__imgGirls-button {
+    background-color: #f3820a;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 160px;
+    height: 42px;
+    margin-top: 40px;
+}
+
+.categories__imgFood-buttonText,
+.categories__imgGirls-buttonText {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    color: black;
+}
+
+.categories__imgGirls {
+    background: url(./Karaoke-Bar/сategories/assets/slide-3.jpg);
+    width: 280px;
+    height: 310px;
+    background-position: left -10px top -5px;
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-color: #757375;
+    background-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+
+    .categories__imgFood-button,
+    .categories__imgGirls-button {
+        margin: 0;
+        margin-top: 40px;
+        position: absolute;
+    }
+
+    .categories__imgFood {
+        width: 344px;
+        height: 325px;
+        background-size: 130%;
+        margin-right: 0;
+    }
+
+    .categories__imgFood-mainTitle,
+    .categories__imgGirls-mainTitle {
+        margin: 0;
+    }
+
+    .categories__imgFood-title,
+    .categories__imgGirls-title {
+        text-align: left;
+        margin: 0;
+    }
+
+    .categories__imgGirls {
+        width: 344px;
+        height: 325px;
+        background-position: left -5px top -5px;
+        background-size: 155%;
+        margin-left: 0;
+    }
+
+    .categories {
+        flex-direction: row;
+    }
+
+    .categories__imgFood,
+    .categories__imgGirls {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .categories__imgFood {
+        width: 600px;
+        height: 325px;
+        background-position: left -20px top -240px;
+        background-size: 110%;
+    }
+
+    .categories__imgFood-title,
+    .categories__imgGirls-title {
+        font-size: 36px;
+        width: 320px;
+        line-height: 45px;
+    }
+
+    .categories__imgGirls {
+        width: 600px;
+        height: 325px;
+        background-position: left top;
+        background-size: 110%;
+    }
+
+    .categories__imgFood,
+    .categories__imgGirls {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .categories__imgFood {
+        width: 792px;
+        height: 427px;
+        background-position: left top -310px;
+        background-size: 100%;
+    }
+
+    .categories__imgFood-mainTitle,
+    .categories__imgGirls-mainTitle {
+        font-size: 40px;
+        width: 110px;
+        padding-top: 80px;
+    }
+
+    .categories__imgFood-title,
+    .categories__imgGirls-title {
+        font-size: 40px;
+        width: 350px;
+        line-height: 50px;
+    }
+
+    .categories__imgGirls {
+        width: 792px;
+        height: 427px;
+        background-position: left top -15px;
+        background-size: 100%;
+    }
+}
+
+.musicpromoute {
+    position: relative;
+    background-color: #f6afcf;
+    width: 280px;
+    height: 418px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.musicpromoute__text {
+    position: absolute;
+    width: 210px;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    color: #4f181d;
+    text-align: center;
+    line-height: 33px;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+
+
+
+.musicpromoute__circles-block1,
+.musicpromoute__circles-block2,
+.musicpromoute__circles-block3,
+.musicpromoute__circles-block4 {
+    background-color: #ffc4de;
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.musicpromoute__circles-block1 {
+    left: 0;
+    right: 0;
+    top: -10px;
+    margin: auto;
+}
+
+.musicpromoute__circles-block2 {
+    left: 50%;
+    top: 20%;
+}
+
+.musicpromoute__circles-block3,
+.musicpromoute__circles-block4 {
+    display: none;
+}
+
+.musicpromoute__quotationMark {
+    color: #ffff;
+    font-size: 178px;
+    position: absolute;
+    top: -15px;
+    font-family: "brush-script-std", sans-serif;
+}
+
+@media (min-width: 768px) {
+    .musicpromoute {
+        width: 688px;
+        height: 172px;
+    }
+
+    .musicpromoute__text {
+        width: 613px;
+        top: 40px;
+        z-index: 3;
+    }
+
+    .musicpromoute__circles-block1 {
+        left: 110px;
+        bottom: 20px;
+        right: unset;
+        top: unset;
+    }
+
+    .musicpromoute__circles-block2 {
+        left: -40px;
+        top: 30px;
+    }
+
+    .musicpromoute__circles-block3,
+    .musicpromoute__circles-block4 {
+        display: unset;
+    }
+
+    .musicpromoute__quotationMark {
+        left: 15px;
+        top: -7px;
+        z-index: 2;
+    }
+
+    .musicpromoute__circles-block3 {
+        right: -60px;
+        top: 80px;
+    }
+
+    .musicpromoute__circles-block4 {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .musicpromoute {
+        width: 1200px;
+        height: 222px;
+    }
+
+    .musicpromoute__text {
+        font-size: 22px;
+        width: 860px;
+        top: 60px;
+    }
+
+    .musicpromoute__text::before {
+        left: 65px;
+        top: -35px;
+    }
+
+    .musicpromoute__circles-block1,
+    .musicpromoute__circles-block2,
+    .musicpromoute__circles-block3,
+    .musicpromoute__circles-block4 {
+        width: 271px;
+        height: 271px;
+    }
+
+    .musicpromoute__quotationMark {
+        left: 17%;
+    }
+
+    .musicpromoute__circles-block2 {
+        left: 9.5%;
+        top: -25px;
+    }
+
+    .musicpromoute__circles-block1 {
+        bottom: 45px;
+        right: 33%;
+    }
+
+    .musicpromoute__circles-block3 {
+        top: 40px;
+        right: -55px;
+    }
+
+    .musicpromoute__circles-block4 {
+        bottom: 40%;
+        right: 6%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .musicpromoute {
+        width: 1583px;
+        height: 222px;
+    }
+
+    .musicpromoute__text {
+        font-size: 26px;
+        width: 1016px;
+        top: 55px;
+        line-height: 38px;
+    }
+
+    .musicpromoute__circles-block1 {
+        right: 60.5%;
+        left: unset;
+    }
+
+    .musicpromoute__circles-block3 {
+        right: 15%;
+    }
+
+    .musicpromoute__circles-block4 {
+        right: 24%;
+    }
+
+    .musicpromoute__quotationMark {
+        left: 21.5%;
+        top: 1%;
+    }
+}
+
+.propositions__menu-li-img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.propositions__menu-li-img>img {
+    width: 64px;
+    height: 64px;
+}
+
+.propositions__menu-li-p-sketch {
+    display: block;
+    color: #f3820a;
+}
+
+.propositions__menu-li-p {
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.propositions__menu-li {
+    margin: 2em 2em;
+}
+
+@media (min-width: 768px) {
+    .propositions__menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .propositions__menu-li-p {
+        font-size: 22px;
+    }
+
+    .propositions__menu-li-img {
+        margin-bottom: 8px;
+    }
+
+    .propositions__menu-li {
+        margin: 2em 2.5em;
+    }
+}
+
+@media (min-width: 1920px)  {
+    .propositions__menu-li-img {
+        width: 84px;
+        height: 84px;
+    }
+    
+    .propositions__menu-li-img>img {
+        width: 84px;
+        height: 84px;
+    }
+
+    .propositions__menu-li-p {
+        font-size: 26px;
+    }
+
+    .propositions__menu-li {
+        margin: 2em 4em;
+    }
+}
+
+
+.reservation {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation__imgBar {
+    background: url(./Karaoke-Bar/reservation/assets/pic3.jpg);
+    width: 280px;
+    height: 325px;
+    background-position: left -40px top -90px;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-color: #a19ea1;
+    background-blend-mode: multiply;
+}
+
+.reservation__imgBar-phoneNumber {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 18px;
+}
+
+.reservation__imgBar-title {
+    color: #f3820a;
+    font-family: "brush-script-std", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    width: 172px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.reservation__imgBar-button {
+    background-color: #f3820a;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 240px;
+    height: 56px;
+    margin-top: 32px;
+}
+
+.reservation__imgBar-buttonText {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 55px;
+    color: black;
+}
+
+.reservation__blockSchedule {
+    background-color: #4f181d;
+    width: 280px;
+    height: 325px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.reservation__blockSchedule-title {
+    font-size: 24px;
+    text-align: center;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 110px;
+}
+
+
+.reservation__blockSchedule-week {
+    width: 210px;
+    margin: 0 auto;
+}
+
+.reservation__blockSchedule-day {
+    color: #f3820a;
+}
+
+.reservation__blockSchedule-time {
+    color: #ffff;
+    float: right;
+}
+
+.reservation__blockSchedule-day,
+.reservation__blockSchedule-time {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
+}
+
+@media (min-width: 768px) {
+    .reservation__imgBar-title {
+        width: 282px;
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    .reservation__imgBar {
+        background-size: 105%;
+        width: 688px;
+        height: 325px;
+        background-position: center;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .reservation__blockSchedule {
+        width: 688px;
+        height: 325px;
+    }
+
+    .reservation__blockSchedule-week {
+        width: 310px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reservation__imgBar {
+        width: 793px;
+        height: 518px;
+        margin-right: 10px;
+    }
+
+    .reservation {
+        flex-direction: row;
+    }
+
+    .reservation__blockSchedule {
+        width: 387px;
+        height: 518px;
+        margin-left: 10px;
+    }
+
+    .reservation__imgBar-title {
+        padding-top: 145px;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 54px;
+        margin: 0;
+    }
+
+    .reservation__imgBar-button {
+        margin-top: 45px;
+    }
+
+    .reservation__blockSchedule-title {
+        line-height: 130px;
+    }
+
+    .reservation__blockSchedule-day,
+    .reservation__blockSchedule-time {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .reservation__blockSchedule-day,
+    .reservation__blockSchedule-time {
+        font-size: 16px;
+    }
+
+    .reservation__imgBar {
+        width: 1049px;
+        height: 620px;
+        margin-right: 10.5px;
+    }
+
+    .reservation__imgBar-title {
+        padding-top: 200px;
+        font-size: 40px;
+        width: 390px;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 64px;
+    }
+
+    .reservation__blockSchedule {
+        width: 513px;
+        height: 620px;
+        margin-left: 10.5px;
+    }
+
+    .reservation__blockSchedule-title {
+        margin-top: 70px;
+        font-size: 26px;
+    }
+}
+
+.gallery,
+.guestsphoto  {
+    margin: 3em 0;
+}
+
+.gallery__title {
+    font-size: 24px;
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery__imgBar-img1 {
+    background: url(./Karaoke-Bar/gallery/assets/pic4.jpg);
+    background-position: left top -60px;
+    background-size: 100%;
+}
+
+.gallery__imgBar-img2 {
+    background: url(./Karaoke-Bar/gallery/assets/pic5.jpg);
+    background-position: left -55px top -8em;
+    background-size: 125%;
+}
+
+.gallery__imgBar-img3 {
+    background: url(./Karaoke-Bar/gallery/assets/pic1.jpg);
+    background-position: left top -45px;
+    background-size: 100%;
+    transform: scaleX(-1);
+}
+
+.gallery__imgBar-img4 {
+    background: url(./Karaoke-Bar/gallery/assets/pic6.jpg);
+    background-position: left -2px top -17px;
+    background-size: 103%;
+}
+
+.gallery__imgBar-img5 {
+    background: url(./Karaoke-Bar/gallery/assets/pic7.jpg);
+    background-position: left -3px top -33px;
+    background-size: 105%;
+}
+
+.gallery__imgBar-img1,
+.gallery__imgBar-img2,
+.gallery__imgBar-img3,
+.gallery__imgBar-img4,
+.gallery__imgBar-img5 {
+    width: 282px;
+    height: 271px;
+    background-repeat: no-repeat;
+    margin-bottom: 19px;
+}
+
+.gallery__imgBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .gallery__title {
+        font-size: 34px;
+        width: 450px;
+    }
+
+    .gallery__imgBar-img1 {
+        width: 690px;
+        height: 537px;
+        margin: 9px;
+        background-position: left top -12em;
+        background-size: 100%;
+    }
+
+    .gallery__imgBar-imgChild {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 710px;
+    }
+
+    .gallery__imgBar-img2,
+    .gallery__imgBar-img3,
+    .gallery__imgBar-img4,
+    .gallery__imgBar-img5 {
+        width: 336px;
+        height: 345px;
+        margin: 9px;
+    }
+
+    .gallery__imgBar-img2 {
+        background-position: left -30px top -8em;
+        background-size: 125%;
+        order: 2;
+    }
+
+    .gallery__imgBar-img3 {
+        background-position: left top -45px;
+        background-size: 100%;
+        order: 1;
+    }
+
+    .gallery__imgBar-img4 {
+        background-position: left -15px top -55px;
+        background-size: 110%;
+        order: 4;
+    }
+
+    .gallery__imgBar-img5 {
+        background-position: left -15px top -65px;
+        background-size: 105%;
+        order: 3;
+    }
+}
+
+@media (min-width: 1280px) {
+    .gallery__title {
+        font-size: 43px;
+        width: 560px;
+    }
+
+    .gallery__imgBar-img2,
+    .gallery__imgBar-img3,
+    .gallery__imgBar-img4,
+    .gallery__imgBar-img5 {
+        width: 287px;
+        height: 272px;
+        order: unset;
+    }
+
+    .gallery__imgBar-imgChild {
+        width: 610px;
+    }
+
+    .gallery__imgBar-img1 {
+        width: 592px;
+        height: 561px;
+        background-size: 108%;
+        background-position: left top -7.5em;
+    }
+
+    .gallery__imgBar {
+        flex-direction: row;
+    }
+
+    .gallery__imgBar-img2 {
+        background-position: left -55px top -8em;
+    }
+
+    .gallery__imgBar-img4 {
+        background-size: 103%;
+        background-position: left -2px top -17px;
+    }
+
+    .gallery__imgBar-img5 {
+        background-position: left -3px top -33px;
+        background-size: 105%;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .gallery__imgBar-img2,
+    .gallery__imgBar-img3,
+    .gallery__imgBar-img4,
+    .gallery__imgBar-img5 {
+        width: 381px;
+        height: 359px;
+    }
+
+    .gallery__imgBar-img1 {
+        width: 784px;
+        height: 740px;
+    }
+
+    .gallery__imgBar-imgChild {
+        width: 798px;
+    }
+}
+
+.guestsphoto__title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.guestsphoto__imgGuests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.guestsphoto__imgGuests>div {
+    background-repeat: no-repeat;
+    width: 282px;
+    height: 271px;
+    margin: 9px;
+}
+
+.guestsphoto__imgGuests>div:nth-child(n + 5) {
+    display: none;
+}
+
+.guestsphoto__imgGuests-img1 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/1.jpg);
+    background-position: top left 66%;
+    background-size: 173%;
+}
+
+.guestsphoto__imgGuests-img2 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/2.jpg);
+    background-position: top 32% left;
+    background-size: 130%;
+}
+
+.guestsphoto__imgGuests-img3 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/3.jpg);
+    background-position: top 103% left 70%;
+    background-size: 178%;
+}
+
+.guestsphoto__imgGuests-img4 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/4.jpg);
+    background-position: top 40% left 38%;
+    background-size: 175%;
+}
+
+.guestsphoto__imgGuests-img5 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/5.jpg);
+}
+
+.guestsphoto__imgGuests-img6 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/6.jpg);
+}
+
+.guestsphoto__imgGuests-img7 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/7.jpg);
+}
+
+.guestsphoto__imgGuests-img8 {
+    background: url(./Karaoke-Bar/guestsphoto/assets/8.jpg);
+}
+
+@media (min-width: 768px) {
+    .guestsphoto__title {
+        font-size: 34px;
+        margin-bottom: 33px;
+    }
+
+    .guestsphoto__imgGuests {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .guestsphoto__imgGuests>div {
+        width: 334px;
+        height: 343px;
+        margin: 9.5px;
+    }
+
+    .guestsphoto__imgGuests-img1 {
+        background-position: top left 66%;
+        background-size: 195%;
+    }
+
+    .guestsphoto__imgGuests-img2 {
+        background-position: top 44% left;
+        background-size: 107%;
+    }
+
+    .guestsphoto__imgGuests-img3 {
+        background-position: top 103% left 69%;
+        background-size: 183%;
+    }
+
+    .guestsphoto__imgGuests-img4 {
+        background-position: top 49% left 49%;
+        background-size: 151%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .guestsphoto__title {
+        font-size: 43px;
+        margin-bottom: 45px;
+    }
+
+    .guestsphoto__imgGuests>div:nth-child(n + 5) {
+        display: unset;
+    }
+
+    .guestsphoto__imgGuests>div {
+        width: 287px;
+        height: 272px;
+        margin: 8.5px;
+    }
+
+    .guestsphoto__imgGuests-img1 {
+        background-position: top left 63%;
+        background-size: 172%;
+    }
+
+    .guestsphoto__imgGuests-img2 {
+        background-position: top 31% left;
+        background-size: 135%;
+    }
+
+    .guestsphoto__imgGuests-img3 {
+        background-position: top 35% left 61%;
+        background-size: 178%;
+    }
+
+    .guestsphoto__imgGuests-img4 {
+        background-position: top 50% left;
+        background-size: 132%;
+    }
+
+    .guestsphoto__imgGuests-img5 {
+        background-position: top 20% left 66%;
+        background-size: 100%;
+    }
+
+    .guestsphoto__imgGuests-img6 {
+        background-position: top 44% left 14%;
+        background-size: 126%;
+    }
+
+    .guestsphoto__imgGuests-img7 {
+        background-position: top 29% left 25%;
+        background-size: 105%;
+    }
+
+    .guestsphoto__imgGuests-img8 {
+        background-position: top 40% left 89%;
+        background-size: 128%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .guestsphoto__imgGuests {
+        margin: 0 auto;
+        justify-content: unset;
+    }
+
+    .guestsphoto__title {
+        margin-bottom: 50px;
+    }
+
+    .guestsphoto__imgGuests>div {
+        width: 381px;
+        height: 359px;
+        margin: 9px;
+    }
+
+    .guestsphoto__imgGuests-img5 {
+        background-position: top 24% left 20%;
+        background-size: 117%;
+    }
+
+    .guestsphoto__imgGuests-img6 {
+        background-position: top 5% left 10%;
+        background-size: 133%;
+    }
+
+    .guestsphoto__imgGuests-img7 {
+        background-position: top 41% left 25%;
+    }
+
+    .guestsphoto__imgGuests-img8 {
+        background-position: top 40% left 70%;
+    }
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__info {
+    height: 391px;
+    background-color: #4f181d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__info-socialNetworks-logo {
+    width: 35px;
+    height: 30px;
+    border: 1px solid #f3820a;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.footer__info-socialNetworks-logoImg {
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+
+.footer__button {
+    width: 240px;
+    height: 56px;
+    background-color: #f3820a;
+    border-radius: 5px;
+}
+
+.footer__infoText-contact p {
+    color: #ffff;
+    display: flex;
+    font-size: 14px;
+}
+
+.footer__infoText-location {
+    font-size: 14px;
+    color: #ffff;
+}
+
+.footer__info-socialNetworks {
+    display: flex;
+    align-items: center;
+}
+
+.footer__buttonText {
+    color: #000000;
+    line-height: 55px;
+    text-align: center;
+    display: block;
+}
+
+.footer__infoText-location,
+.footer__infoText-contact p {
+    line-height: 25px;
+}
+
+.footer__infoText-location,
+.footer__infoText-locationImgPointer {
+    display: -webkit-inline-box;
+}
+
+.footer__infoText-contact p span {
+    color: #f3820a;
+    margin-left: 3px;
+}
+
+.footer__line {
+    height: 1px;
+    background-color: #603034;
+}
+
+.footer__complement {
+    height: 60px;
+    background-color: #421418;
+    padding-top: 20px;
+}
+
+.footer__complementText {
+    font-size: 11px;
+    color: #7f6b6c;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__complementText-line {
+    width: 1px;
+    height: 20px;
+    display: inline-block;
+    background-color: #603034;
+}
+
+.footer__complementText-img {
+    margin: 0 10px;
+}
+
+.footer__complementText-img:first-child {
+    margin-left: 0;
+}
+
+.footer__complementText-developers {
+    border-bottom: 1px solid #7f6b6c;
+}
+
+@media (max-width: 512px) {
+    .footer__logoImg {
+        display: block;
+        margin: 0 auto;
+        width: 66px;
+        height: 31px;
+        margin-top: 30px;
+    }
+
+    .footer {
+        height: 391px;
+        background-color: #4f181d;
+    }
+
+    .footer__info {
+        text-align: left;
+        display: inline-block;
+        width: 280px;
+    }
+
+    .footer__complementText-line {
+        margin: 0 11px;
+    }
+
+    .footer__infoText {
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .footer__infoText-contact {
+        margin: 7px 17px;
+    }
+
+    .footer__button {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .footer__info-socialNetworks {
+        justify-content: center;
+        height: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .footer__complementText-line {
+        margin: 0 22px;
+    }
+
+    .footer__button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+    }
+
+    .footer__infoText-location {
+        margin-right: 30px;
+    }
+    
+    .footer__infoText-contact {
+        margin-left: 30px;
+    }
+    
+
+    .footer__infoText,
+    .footer__info-socialNetworks {
+        height: 55px;
+    }
+
+    .footer__infoText-locationImgPointer {
+        margin-right: 5px;
+    }
+
+    .footer {
+        text-align: unset;
+    }
+
+    .footer__info {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        height: 238px;
+        padding-top: 30px;
+    }
+
+    .footer__logoImg {
+        width: 66px;
+        height: 31px;
+    }
+
+    .footer__infoText {
+        display: flex;
+    }
+} 
+@media (min-width: 1280px) {
+    .footer__info {
+        align-items: center;
+        padding: 0px 100px;
+    }
+
+    .footer__button {
+        position: unset;
+        margin: 0;
+    }
+
+    .footer__logoImg {
+        width: 85px;
+        height: 39px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .footer__logoImg {
+        width: 112px;
+        height: 53px;
+        margin-bottom: 20px;
+    }
+
+    .footer__info {
+        padding: 0px 200px;
+    }
+
+    .footer__infoText-contact {
+        margin-left: 70px;
+    }
+
+    .footer__infoText-location {
+        margin-right: 70px;
+    }
+}
