@@ -120,16 +120,23 @@ header {
 
 .header__info-switch {
     display: flex;
-    justify-content: center;
-    margin-top: 120px;
+    justify-content: space-between;
+    width: 70px;
+    margin: 8em auto 0 auto;
 }
 
-.header__info-switch>div {
-    margin-right: 5px;
+.header__info-switch-button {
+    background-color: unset;
+    border: 1px solid#ffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.header__info-switch>div:last-child {
-    margin-right: 0;
+.header__info-switch-button:focus {
+    background-color: #00c7fc;
+    border: #00c7fc;
 }
 
 /* ----------------- infoStory ----------------- */
