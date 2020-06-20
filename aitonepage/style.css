@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100vw;
+}
+
+button {
+    outline: unset;
+    border: unset;
+    background: unset;
+}
+
+/* -----------======== header ========----------- */
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffff;
+    border-bottom: 1px solid #ffff;
+    padding: 0 30px;
+    width: 100%;
+    height: 95px;
+    z-index: 998;
+}
+
+.header__logo-img {
+    width: 125px;
+}
+
+.header__burgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15px;
+}
+
+.header__burgerMenu:focus div {
+    background: #17bed2;
+    width: 21px;
+}
+
+.header__burgerMenu-line {
+    background: #000;
+    transition: .5s all;
+}
+
+.headerFisrtLine {
+    width: 10px;
+    height: 1px;
+}
+
+.headerSecondLine {
+    width: 16px;
+    height: 1px;
+}
+
+.headerThirdLine {
+    width: 21px;
+    height: 1px;
+}
+
+.header__list {
+    display: none;
+    background: #ffff;
+    transition: 2s;
+    width: 100%;
+    top: 5.9em;
+    left: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.burgerMenuHeight {
+    display: block;
+    position: absolute;
+    animation: grow .3s linear 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    0% {
+        height: 0px;
+    }
+
+    50% {
+        height: 160px;
+    }
+
+    100% {
+        height: 320px;
+    }
+}
+
+.header__list-item {
+    padding: 12px 20px;
+}
+
+.header--item-link {
+    font: 600 13px 'Hind-Medium';
+    color: #515769;
+    text-transform: uppercase;
+}
+
+.header--item-link::before {
+    content: '';
+    position: absolute;
+    background: #17bed2;
+    left: -1.5em;
+    top: 0.6em;
+    width: 9px;
+    height: 2px;
+    opacity: 0;
+}
+
+.header--item-link:hover::before {
+    opacity: 1;
+    transition: .5s all;
+}
+
+/* -----------======== headerInfo ========----------- */
+
+.haederInfo__slider-navigation {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    bottom: 20%;
+    left: -25%;
+}
+
+.headerInfo__slides-form input {
+    opacity: 0;
+}
+
+.headerInfo__slides-form,
+.headerInfo__slider-slide {
+    position: absolute;
+}
+
+.haederInfo--navigation-button {
+    background: transparent;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.haederInfo--navigation-button:focus {
+    background: #ffff;
+    transform: scale(1.2);
+}
+
+/* -----------======== mediaLaptop ========----------- */
+
+@media (min-width: 1024px) {
+    .header {
+        justify-content: space-around;
+        border: unset;
+    }
+
+    .header__list {
+        display: flex;
+        align-items: center;
+        position: unset;
+        background: unset;
+    }
+
+    .header__burgerMenu {
+        display: none;
+    }
+
+    .header--item-link {
+        position: relative;
+        color: #000;
+    }
+}
