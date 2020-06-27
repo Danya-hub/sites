@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'pfdintextcondpro-regular';
+    src: url(./fonts/pfdintextcondpro-regular.ttf);
+}
+
+@font-face {
+    font-family: 'CeremoniousOne';
+    src: url(./fonts/ceremonious_one.ttf);
+}
+
+/* @font-face {
+    font-family: 'PFDinTextCondPro-Regular';
+    src: url(./fonts/pfdintextcondpro-regular.ttf);
+} */
+
+/* @font-face {
+    font-family: 'IdealistSans';
+    src: url(./fonts/idealist-sans.regular.ttf);
+} */
+
+@font-face {
+    font-family: 'IdealistSans';
+    src: url(./fonts/idealist-sans.regular.ttf);
+}

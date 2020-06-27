@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to top, #e6aa64, #d5d9ae 60%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+}
+
+button {
+    background: unset;
+    outline: unset;
+    border: unset;
+}
+
+/* -----------====== circle ======----------- */
+
+.sunSection {
+    width: 100vw;
+    height: 60%;
+}
+
+.sun {
+    position: absolute;
+    background: linear-gradient(to right,#ffd20c, #ffa100 60%);
+    border: 5px solid #ffa100;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: motion 10s linear infinite;
+}
+
+@keyframes motion {
+    0% {
+        left: -30%;
+        top: 4em;
+    }
+    50% {
+        top: 2em;
+    }
+    100% {
+        transform: rotate(360deg);
+        left: 100%;
+        top: 4em;
+    }
+}
+
+.sun-smileImg {
+    background: url(./assets/smile.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: 1s opacity;
+    opacity: 0;
+}
+
+.smileImgActive {
+    opacity: 1;
+}
+
+/* -----------====== grass ======----------- */
+
+.grassSection {
+    position: relative;
+    width: 100vw;
+    height: 40%;
+    overflow: hidden;
+} 
+
+.firstMountain {
+    position: absolute;
+    background: linear-gradient(to bottom,#1ec325, #228f26);
+    width: 100%;
+    height: 100%;
+    border-radius: 25% 25% 0 0;
+    box-shadow: 0px 0px 0px 3px green;
+    animation: firstAppearanceOf 2s linear;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+@keyframes firstAppearanceOf {
+    0% {
+        top: 105%;
+    }
+    50% {
+        top: 60%;
+    }
+    100% {
+        top: 65%;
+    }
+}
+
+.secondMountain {
+    position: absolute;
+    background: linear-gradient(to bottom,#1ec325, #228f26);
+    width: 50%;
+    height: 50%;
+    border-radius: 20em 20em 0 0;
+    box-shadow: 0px 0px 0px 3px green;
+    animation: secondAppearanceOf 3s linear;
+    animation-fill-mode: forwards;
+    left: -4em;
+    z-index: 1;
+}
+
+@keyframes secondAppearanceOf {
+    0% {
+        top: 90%;
+    }
+    50% {
+        top: 35%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+.thirdMountain {
+    position: absolute;
+    background: linear-gradient(to bottom,#1ec325, #228f26);
+    width: 50%;
+    height: 100%;
+    border-radius: 51% 49% 70% 30% / 100% 100% 0% 0% ;
+    box-shadow: 0px 0px 0px 3px green;
+    animation: thirdAppearanceOf 1s linear;
+    animation-fill-mode: forwards;
+    right: -5em;
+    z-index: 3;
+}
+
+@keyframes thirdAppearanceOf {
+    0% {
+        top: 90%;
+    }
+    50% {
+        top: 35%;
+    }
+    100% {
+        top: 40%;
+    }
+}

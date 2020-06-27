@@ -21,59 +21,61 @@
                     <div class="header__burgerMenu-line headerSecondLine"></div>
                     <div class="header__burgerMenu-line headerThirdLine"></div>
                 </button>
-                <ul class="header__list ">
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">home</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">about</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">products</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">pricing</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">work</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">services</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="#" class="header--item-link">contact</a>
-                    </li>
-                </ul>
+                <div class="header__listBlock burgerNot-active">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">home</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">about</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">products</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">pricing</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">work</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">services</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header--item-link">contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </section>
         <section class="headerInfo">
-            <div class="headerInfo__slider middle">
+            <div class="headerInfo__slider">
                 <div class="headerInfo__slides">
-                    <form class="headerInfo__slides-form">
-                        <input type="radio" name="radio" id="radio1">
-                        <input type="radio" name="radio" id="radio2">
-                    </form>
                     <div class="headerInfo__slider-slide">
-                        <img src="./assets/womenKeepTel.jpg" alt="картинка" class="headerInfo--slide-img">
-                    </div>
-                    <div class="headerInfo__slider-slide">
-                        <img src="./assets/clockInHand.jpg" alt="картинка" class="headerInfo--slide-img">
+                        <div class="headerInfo--slide-img headerFirstImg">
+                            <div class="headerInfo--slide-info">
+                                <h2 class="headerInfo--slide-title">HI-TECH DESIGN</h2>
+                                <p class="headerInfo--slide-txt">Lorem ipsum dolor amet consectetur adipiscing dolore
+                                    magna
+                                    aliqua enim minim estudiat veniam siad venumus dolore</p>
+                                <button class="headerInfo--slide-button">explore</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="haederInfo__slider-navigation">
-                    <button class="haederInfo--navigation-button">
-                        <label for="radio1" class="haederInfo--navigation-bar"></label>
-                    </button>
-                    <button class="haederInfo--navigation-button">
-                        <label for="radio2" class="haederInfo--navigation-bar"></label>
-                    </button>
+                    <form class="haederInfo__form">
+                        <input type="radio" class="haederInfo--navigation-button" id="firstRadioButton" name="slider"
+                            checked>
+                        <input type="radio" class="haederInfo--navigation-button" id="secondRadioButton" name="slider">
+                    </form>
                 </div>
             </div>
         </section>
     </header>
-   <main>
-       11111111111
-   </main>
+    <main>
+        11111111111
+    </main>
     <script src="./index.js" type="module"></script>
 </body>
 
