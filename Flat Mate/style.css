@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    user-select: none;
+}
+
+input,
+textarea,
+button {
+    display: block;
+    background: unset;
+    outline: unset;
+    border: unset;
+}
+
+img {
+    display: block;
+    width: 100vw;
+    height: 100%;
+}
+
+/* --------------- <header> --------------- */
+
+header {
+    background: url(./assets/Layer\ 4@1X.png) center no-repeat;
+    background-size: cover;
+    background-color: #4e5d70;
+    background-blend-mode: multiply;
+    color: #ffff;
+    height: 80vh;
+    padding-top: 30px;
+}
+
+/* ---------======== header ========--------- */
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header,
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__checkIn {
+    display: none;
+}
+
+.header__logo-circle {
+    position: relative;
+    background: #67bf95;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.header__logo-circle::before {
+    content: '';
+    position: absolute;
+    background: #57b287;
+    width: 50%;
+    height: 100%;
+}
+
+.header__logo-txt {
+    font: 100 20px 'Roboto-Regular';
+    color: #ffff;
+}
+
+.header__txtQuestion {
+    font: 100 15px 'Roboto-ThinItalic';
+    margin-right: 20px;
+    opacity: 0.6;
+}
+
+.header__buttonLogin {
+    background: #3d4b60;
+    border-radius: 7px;
+    color: #ffff;
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ---------======== headerInfo ========--------- */
+
+/* ---------======== mediaHeader ========--------- */
+
+@media (min-width: 768px) {
+    .header__logo-circle {
+        width: 44px;
+        height: 44px;
+    }
+
+    .header__logo-txt {
+        font-size: 30px;
+    }
+
+    .header__checkIn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* ------------------------------ */
