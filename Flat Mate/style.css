@@ -8,6 +8,7 @@
 
 body {
     user-select: none;
+    font-size: 100%;
 }
 
 input,
@@ -21,8 +22,26 @@ button {
 
 img {
     display: block;
+    width: 100%;
+}
+
+.header,
+.headerInfo,
+.mainInfo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
     width: 100vw;
-    height: 100%;
+    height: 100vh;
+    z-index: 998;
+}
+
+.modalAction {
+    display: none;
 }
 
 /* --------------- <header> --------------- */
@@ -33,16 +52,96 @@ header {
     background-color: #4e5d70;
     background-blend-mode: multiply;
     color: #ffff;
-    height: 80vh;
-    padding-top: 30px;
+    padding: 50px 0;
+}
+
+.header__modalIcon {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #ffff;
+    color: #000;
+    visibility: hidden;
+    overflow-x: hidden;
+    transition: all .5s ease;
+    width: 290px;
+    height: 325px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(0, -100%);
+    padding: 15px;
+    opacity: 0;
+    z-index: 999;
+}
+
+.header__modalIcon button {
+    cursor: pointer;
+}
+
+.header__modalIcon-closeButton {
+    position: absolute;
+    font-size: 18px;
+    right: 10px;
+    top: 5px;
+}
+
+.header__modalIcon div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--buttonReg,
+.header---checkbox-txt {
+    font: 100 12px 'Roboto-Italic';
+}
+
+.header__modalIcon-title {
+    font: 600 25px 'RobotoSlab-Regular';
+    text-align: center;
+}
+
+.header__modalIcon-form input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: .5s;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0;
+}
+input[type="text"],
+input[type="email"],
+.header__modalIcon-form input::placeholder {
+    font: 600 13px 'Roboto-Regular';
+    color: grey;
+}
+
+.header__modalIcon-form input:focus {
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0);
+}
+
+.header--buttonSubmite {
+    background: #4e5d70;
+    font: 600 13px 'Roboto-Regular';
+    border-radius: 5px;
+    color: #ffff;
+    width: 90px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.header__modalIcon-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
 }
 
 /* ---------======== header ========--------- */
-
-.header {
-    width: 80%;
-    margin: 0 auto;
-}
 
 .header,
 .header__logo {
@@ -51,16 +150,12 @@ header {
     justify-content: space-between;
 }
 
-.header__checkIn {
-    display: none;
-}
-
 .header__logo-circle {
     position: relative;
     background: #67bf95;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 6vw;
+    height: 6vw;
     margin-right: 20px;
     overflow: hidden;
 }
@@ -78,33 +173,122 @@ header {
     color: #ffff;
 }
 
+.header__checkIn-mobileVer {
+    background: url(./assets/login.svg) center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
 .header__txtQuestion {
-    font: 100 15px 'Roboto-ThinItalic';
+    font: 100 1.5vw 'Roboto-ThinItalic';
+    color: #ffff;
     margin-right: 20px;
-    opacity: 0.6;
+    cursor: pointer;
 }
 
 .header__buttonLogin {
     background: #3d4b60;
+    font: 100 1.5vw 'Roboto-Regular';
     border-radius: 7px;
     color: #ffff;
-    width: 65px;
-    height: 30px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
 /* ---------======== headerInfo ========--------- */
 
-/* ---------======== mediaHeader ========--------- */
+.headerInfo {
+    margin-top: 4em;
+}
+
+.headerInfo__mainTitle {
+    font: 100 5vw 'RobotoSlab-Regular';
+}
+
+.headerInfo__txtDescription {
+    font: 100 13px 'Roboto-Regular';
+    line-height: 2;
+    margin-top: 2em;
+}
+
+.headerInfo__logoMessage {
+    display: none;
+    margin-left: 3em;
+    height: fit-content;
+}
+
+.headerInfo__buttonMoreInfo {
+    background: #67bf95;
+    font: 100 3vw 'Roboto-Regular';
+    border-radius: 10px;
+    color: #ffff;
+    margin-top: 2em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* ---------======== mainInfo ========--------- */
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.mainInfo__logoFile {
+    display: none;
+    width: 100%;
+}
+
+.mainInfo__netWork button {
+    border: 2px solid #67bf95;
+    font: 100 16px 'Heebo-Black';
+    background: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+}
+
+.netWorkActiveButton {
+    background: #67bf95 !important;
+    color: #ffff;
+}
+
+.mainInfo__txt-info {
+    margin-top: 20px;
+}
+
+.mainInfo__txt-info-p {
+    font: 100 13px 'Roboto-Regular';
+    text-align: justify;
+    line-height: 2;
+}
+
+.mainInfo__netWork {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.mainInfo__txt-title {
+    font: 100 5vw 'RobotoSlab-Regular';
+}
+
+/* ---------======== @media ========--------- */
 
 @media (min-width: 768px) {
-    .header__logo-circle {
-        width: 44px;
-        height: 44px;
+    .headerInfo {
+        display: flex;
     }
 
-    .header__logo-txt {
-        font-size: 30px;
+    .mainInfo__logoFile,
+    .headerInfo__logoMessage {
+        display: unset;
     }
 
     .header__checkIn {
@@ -112,6 +296,30 @@ header {
         align-items: center;
         justify-content: space-between;
     }
+
+    .mainInfo {
+        flex-direction: row;
+    }
+
+    .mainInfo__netWork {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .mainInfo__txt {
+        margin: 0 30px;
+    }
 }
 
-/* ------------------------------ */
+@media (min-width: 1024px) {
+    .mainInfo__txt-info-p,
+    .headerInfo__txtDescription {
+        font-size: 2vw;
+    }
+
+    .header__logo-txt {
+        font-size: 3vw;
+    }
+}
+
+/* --------------- The end --------------- */

@@ -10,35 +10,54 @@
 </head>
 
 <body>
+    <div class="modal modalAction"></div>
     <header>
         <section class="header">
             <a href="#" class="header__logo">
                 <div class="header__logo-circle"></div>
                 <span class="header__logo-txt">Flat Mate</span>
             </a>
-            <button class="header__burgerMenu"> <!-- info --></button>
             <div class="header__checkIn">
-                <p class="header__txtQuestion">Have an Account ?</p>
-                <button class="header__buttonLogin">LOGIN</button>
+                <div class="header__checkIn-mobileVer"></div>
             </div>
         </section>
+        <div class='header__modalIcon'>
+            <!-- modal -->
+        </div>
         <section class="headerInfo">
             <div>
                 <h1 class="headerInfo__mainTitle">Lorem ipsum dolor sit amet</h1>
-                <div class="headerInfo__txtDescription">
-                    <p class="headerInfo__txtDescription-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
+                <p class="headerInfo__txtDescription">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <button class="headerInfo__buttonMoreInfo">Read More</button>
             </div>
-            <div class="haederInfo__logoMessage">
-                <img src="" alt="картинка" class="haederInfo__logoMessage-img">
+            <div class="headerInfo__logoMessage">
+                <img src="./assets/Vector Smart Object@1X.png" alt="картинка" class="headerInfo__logoMessage-img">
             </div>
         </section>
     </header>
-    <main></main>
+    <main>
+        <section class="mainInfo">
+            <div class="mainInfo__logoFile">
+                <img src="./assets/file.png" alt="картинка" class="mainInfo__logoFile-img">
+            </div>
+            <div class="mainInfo__txt">
+                <h2 class="mainInfo__txt-title">Lorem ipsum dolor sit amet</h2>
+                <div class="mainInfo__txt-info">
+                    <p class="mainInfo__txt-info-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="mainInfo__netWork">
+                <button class="mainInfo__netWork-logoPencil netWorkActiveButton">&#10000;</button>
+                <button class="mainInfo__netWork-logoFacebook">f</button>
+            </div>
+        </section>
+    </main>
     <footer></footer>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
