@@ -26,7 +26,7 @@ export const header = () => {
                 modal = document.querySelector('.modal');
             modal.classList.remove('modalAction');
             modalIcon.style.opacity = 1;
-            modalIcon.style.visibility = 'unset';
+            modalIcon.style.visibility = 'visible';
             modalIcon.style.transform = 'translate(0%, 0%)';
             console.log(closeButton);
             switch (e.target.dataset.safety) {
@@ -34,16 +34,18 @@ export const header = () => {
                     modalIcon.innerHTML = modalReg();
                     closeButton.addEventListener('click', () => {
                         modal.classList.add('modalAction');
-                        modalIcon.style.bottom = '130%';
+                        modalIcon.style.transform = 'translate(0, -100%)';
+                        modalIcon.style.visibility = 'hidden';
                         modalIcon.style.opacity = 0;
                     })
                     break;
                 case 'log':
                     modalIcon.innerHTML = modalLogin();
                     // closeButton.addEventListener('click', () => {
-                    //     modal.classList.add('modalAction');
-                    //     modalIcon.style.bottom = '130%';
-                    //     modalIcon.style.opacity = 0;
+                        // modal.classList.add('modalAction');
+                        // modalIcon.style.transform = 'translate(0, -100%)';
+                        // modalIcon.style.visibility = 'hidden';
+                        // modalIcon.style.opacity = 0;
                     // })
                     break;
 

@@ -1,8 +1,13 @@
 export const mainInfo = () => {
-    const netWork = document.querySelector('.mainInfo__netWork');
+    const netWork = document.querySelector('.mainInfo__netWork'),
+        logoPencil = document.querySelector('.mainInfo__netWork-logoPencil'),
+        logoFacebook = document.querySelector('.mainInfo__netWork-logoFacebook'),
+        body = document.querySelector('body');
+    if (body.offsetWidth <= 420) {
+        logoPencil.textContent = '';
+        logoFacebook.textContent = '';
+    }
     const activeButtonNetWork = (e) => {
-        const logoPencil = document.querySelector('.mainInfo__netWork-logoPencil'),
-            logoFacebook = document.querySelector('.mainInfo__netWork-logoFacebook');
         if (e.target === e.currentTarget) {
             return
         }

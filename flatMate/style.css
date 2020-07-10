@@ -11,6 +11,10 @@ body {
     font-size: 100%;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 input,
 textarea,
 button {
@@ -65,7 +69,6 @@ header {
     background: #ffff;
     color: #000;
     visibility: hidden;
-    overflow-x: hidden;
     transition: all .5s ease;
     width: 290px;
     height: 325px;
@@ -246,12 +249,13 @@ input[type="email"],
 
 .mainInfo__netWork button {
     border: 2px solid #67bf95;
-    font: 100 16px 'Heebo-Black';
+    font: 100 1vw 'Heebo-Black';
     background: transparent;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     margin: 15px;
+    cursor: pointer;
 }
 
 .netWorkActiveButton {
