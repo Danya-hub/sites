@@ -8,7 +8,9 @@ import {
 export const header = () => {
     const body = document.querySelector('body'),
         checkIn = document.querySelector('.header__checkIn'),
-        modalIcon = document.querySelector('.header__modalIcon');
+        modalIcon = document.querySelector('.header__modalIcon'),
+        closeButton = document.querySelector('.header__modalIcon-closeButton'),
+        modal = document.querySelector('.modal');
     // if (body.offsetWidth < 420) {
     //     const mobileVerSafety = 
     // }
@@ -22,38 +24,27 @@ export const header = () => {
                 return
             }
             console.log(e.target.dataset.safety);
-            const closeButton = document.querySelector('.header__modalIcon-closeButton'),
-                modal = document.querySelector('.modal');
             modal.classList.remove('modalAction');
             modalIcon.style.opacity = 1;
             modalIcon.style.visibility = 'visible';
             modalIcon.style.transform = 'translate(0%, 0%)';
-            console.log(closeButton);
+            // console.log(closeButton);
             switch (e.target.dataset.safety) {
                 case 'reg':
                     modalIcon.innerHTML = modalReg();
-                    closeButton.addEventListener('click', () => {
-                        modal.classList.add('modalAction');
-                        modalIcon.style.transform = 'translate(0, -100%)';
-                        modalIcon.style.visibility = 'hidden';
-                        modalIcon.style.opacity = 0;
-                    })
+                    // modal.classList.add('modalAction');
+                    // modalIcon.style.transform = 'translate(0, -100%)';
+                    // modalIcon.style.visibility = 'hidden';
+                    // modalIcon.style.opacity = 0;
                     break;
                 case 'log':
                     modalIcon.innerHTML = modalLogin();
-                    // closeButton.addEventListener('click', () => {
-                        // modal.classList.add('modalAction');
-                        // modalIcon.style.transform = 'translate(0, -100%)';
-                        // modalIcon.style.visibility = 'hidden';
-                        // modalIcon.style.opacity = 0;
-                    // })
                     break;
 
                 default:
                     break;
             }
         }
-
         checkIn.addEventListener('click', safety);
     }
 }

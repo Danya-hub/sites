@@ -218,8 +218,9 @@ input[type="email"],
 
 .headerInfo__logoMessage {
     display: none;
-    margin-left: 3em;
+    max-width: 400px;
     height: fit-content;
+    margin-left: 3em;
 }
 
 .headerInfo__buttonMoreInfo {
@@ -244,7 +245,7 @@ input[type="email"],
 
 .mainInfo__logoFile {
     display: none;
-    width: 100%;
+    width: 70%;
 }
 
 .mainInfo__netWork button {
