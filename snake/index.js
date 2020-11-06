@@ -47,6 +47,8 @@ for (let i = 0; i < snakeBody.length; i++) {
 
 snakeBody[0].classList.add('head')
 
+//apple
+
 let apple;
 
 const creatApple = () => {

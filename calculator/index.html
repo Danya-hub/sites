@@ -5,36 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>calculator</title>
+    <title>calc</title>
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="calculator__output"></div>
-        <div class="buttonsСo-ordination">
-            <button class="calculator__plus" data-coordination="plus">+</button>
-            <button class="calculator__minus" data-coordination="minus">-</button>
-            <button class="calculator__multiplication" data-coordination="multiplication">×</button>
-            <button class="calculator__division" data-coordination="division">÷</button>
-            <button class="calculator__equally" data-coordination="equally">=</button>
-            <button class="calculator__clear" data-coordination="clear">C</button>
-        </div>
-        <div class="buttonsNumber">
-            <button class="number">0</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="number">9</button>
-            <button class="number">00</button>
+    <div class="wrapper">
+        <input type="text" name="text" id="input">
+        <div class="buttons">
+            <button class="button forbiddenness operator" type="submit" data-elem="plus">+</button>
+            <button class="button forbiddenness operator" type="submit" data-elem="minus">-</button>
+            <button class="button forbiddenness operator" type="submit" data-elem="multiplication">*</button>
+            <button class="button forbiddenness operator" type="submit" data-elem="division">/</button>
+            <button class="button forbiddenness operator" type="submit" data-elem="equal">=</button>
+            <button class="button" type="submit" data-elem="darlingRight">(</button>
+            <button class="button" type="submit" data-elem="darlingLeft">)</button>
+            <button class="button" type="submit" data-elem="num">1</button>
+            <button class="button" type="submit" data-elem="num">2</button>
+            <button class="button" type="submit" data-elem="num">3</button>
+            <button class="button" type="submit" data-elem="num">4</button>
+            <button class="button" type="submit" data-elem="num">5</button>
+            <button class="button" type="submit" data-elem="num">6</button>
+            <button class="button" type="submit" data-elem="num">7</button>
+            <button class="button" type="submit" data-elem="num">8</button>
+            <button class="button" type="submit" data-elem="num">9</button>
+            <button class="button forbiddenness" type="submit" data-elem="num">0</button>
+            <button class="button forbiddenness" type="submit" data-elem="delete"></button>
         </div>
     </div>
-    <script src="./index.js" type="module"></script>
 </body>
+<script src="./index.js" type="module"></script>
 
 </html>

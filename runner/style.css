@@ -146,6 +146,7 @@ body {
     -webkit-animation: movingRunnerHorizontally 1s linear infinite;
     -o-animation: movingRunnerHorizontally 1s linear infinite;
     -moz-animation: movingRunnerHorizontally 1s linear infinite;
+    pointer-events: none;
 }
 
 .runner::after {
